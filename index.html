@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="HR Iguazu Traslados es una agencia de traslado que tiene como objetivo hacer tu experiencia de viaje unico.">
+    <!-- style -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+        <!-- style custom-->
+        <link rel="stylesheet" href="css/custom.css">
+    <!-- fontawasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- scroll smooth -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="icon" href="img/fav-hom.png">
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>HR Iguazu Traslados Turismo | Traslasdos VIP</title>
+</head>
+
+<body>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+
+    <!-- WhatsApp bnt -->
+    <div class="conact-btn">
+        <a href="https://bit.ly/WppLinkHr" target="_blank"><i
+                class="fa-brands fa-whatsapp icon-social"></i></a>
+    </div>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-md ">
+        <div class="container-fluid">
+            <img src="img/nav-brand.png" alt="LogoHrIguazuTraslados">
+            <a class="navbar-brand" id="brand" href="#">HR Iguazu Traslados</a>
+            <button id="offcanvas-btn" class="offcanvas-btn" data-bs-toggle="offcanvas" onclick="btn_nav()" id="demo"
+                data-bs-target="#demo">
+                <i class="icon-nav fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav justify-content-end collapse navbar-collapse">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#destinos">Destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonios">Testominos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas offcanvas-start" id="demo">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-center">
+                    HR Iguazu Traslados
+                </h5>
+                <button type="button" class="btn-close text-reset" onclick="close_nav()" id="close-btn"
+                    data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center flex-grow-1 ">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-dismiss="offcanvas" data-bs-target="#my-offcanvas"
+                            href="#">Incio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-dismiss="offcanvas" data-bs-target="#my-offcanvas"
+                            href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-dismiss="offcanvas" data-bs-target="#my-offcanvas"
+                            href="#destinos">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-dismiss="offcanvas" data-bs-target="#my-offcanvas"
+                            href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-dismiss="offcanvas" data-bs-target="#my-offcanvas"
+                            href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <img src="img/nav-brand.png" alt="LogoHrIguazuTraslados">
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider -->
+    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <article class="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </article>
+        <section class="carousel-inner">
+            <article class="carousel-item active">
+                <img src="img/slide-01.jpeg" class="d-block w-100" alt="imgslidercataratas">
+                <div class="carousel-caption">
+                    <h5 class="">Cataratas del Iguazu</h5>
+                </div>
+            </article>
+            <article class="carousel-item">
+                <img src="img/silde-02.jpg" class="d-block w-100" alt="imgslidercataratas">
+                <div class="carousel-caption">
+                    <h5 class="">Cataratas del Iguazu</h5>
+                </div>
+            </article>
+            <article class="carousel-item">
+                <img src="img/slide-03.jpg" class="d-block w-100" alt="imgslidercataratas">
+                <div class="carousel-caption">
+                    <h5>Cataratas del Iguazu</h5>
+                </div>
+            </article>
+            <article class="carousel-item">
+                <img src="img/slide-04.jpg" class="d-block w-100" alt="imgsliderparqueaves">
+                <div class="carousel-caption">
+                    <h5>Parque de las Aves</h5>
+                </div>
+            </article>
+            <article class="carousel-item">
+                <img src="img/slide-05.jpg" class="d-block w-100" alt="imgsliderparqueaves">
+                <div class="carousel-caption">
+                    <h5>Selva Misionera</h5>
+                </div>
+            </article>
+        </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button id="next-btn" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </section>
+    <!-- content -->
+
+    <main>
+        <!-- MAIN TITLE -->
+        <section class="row main__container">
+            <div class="main__logo" >
+                <img class="col-12" src="img/nav-brand.png" alt="LogoHrIguazuTraslados">
+            </div>
+            <h1 class="col-12 main__title" >Contamos con Taxis a todos los puntos turisticos Locales, Fronterizos y Provinciales</h1> 
+            <p class="col-12 main__text" >Podes revservar tu lugar ahora, consultanos por nuestros destinos, y adquirí 20% de descuentos por contratar via <a class="bold" href="https://api.whatsapp.com/send?phone=5493757625888" target="_blank" >WhatsApp</a> </p>
+        </section>
+        
+        <!-- DESTINOS -->
+        <section id="destinos" class="row bg-color">
+                <h2 class="title text-light" >Destinos mas visitados</h2>
+
+                <div class="col-4">
+                    <article class="card--custom" >
+                        <div class="card__header">
+                                <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaArgentina">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title" >Cataratas del Iguazú</h3>
+                            <p class="card__text" >Traslado Ida y vuelta desde tu hotel hasta el parque nacional Iguazú.</p>
+                            <p class="card__hastags" >
+                                <span>Locales</span>  
+                                <span>MasVisitados</span>  
+                                <span>Recomendados</span> 
+                            </p>
+                        </div>
+                        <div class="card__footer" >
+                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                            <p class="card__footer-stars" >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4" >
+                    <article class="card--custom" >
+                        <div class="card__header">
+                                <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaBrazil">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title" >Aeropuerto Iguazú (IGR)</h3>
+                            <p class="card__text" >Traslados desde y hasta el aeropuerto de la ciudad de Puerto Iguazú.</p>
+                            <p class="card__hastags" >
+                                <span>Locales</span>  
+                                <span>MasVisitados</span>  
+                                <span>Recomendados</span> 
+                            </p>
+                        </div>
+                        <div class="card__footer" >
+                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                            <p class="card__footer-stars" >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4" >
+                        <article class="card--custom" >
+                        <div class="card__header">
+                                <img  class="card__header-flag" src="img/brazil-flag.png" alt="BanderaBrazil">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title" >Ruinas San Ignacio</h3>
+                            <p class="card__text" >Realizamos el Traslado completo(Ida y Vuelta) hasta Las Ruinas de San Ignacio es una de los patrimonios de la humanidad. </p>
+                            <p class="card__hastags" >
+                                <span>Provinciales</span>  
+                                <span>MasVisitados</span>  
+                                <span>Unico</span> 
+                            </p>
+                        </div>
+                        <div class="card__footer" >
+                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                            <p class="card__footer-stars" >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="card--custom" >
+                        <div class="card__header">
+                                <img  class="card__header-flag" src="img/paraguay-flag.png" alt="BanderaParaguay">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title" >Tour de Compras en Paraguay</h3>
+                            <p class="card__text" >Te llevamos de compras por Shoppings en Ciudad de Este, Paraguay</p>
+                            <p class="card__hastags" >
+                                <span>Seguro</span>  
+                                <span>Internacion</span>  
+                                <span>Recomendados</span> 
+                            </p>
+                        </div>
+                        <div class="card__footer" >
+                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                            <p class="card__footer-stars" >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4" >
+                        <article class="card--custom" >
+                        <div class="card__header">
+                                <img  class="card__header-flag" src="img/brazil-flag.png" alt="BanderaBrazil">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title" >Cataratas Brasileñas</h3>
+                            <p class="card__text" >Te llevamos a las Cataratas del lado brasileño, te regalamos un viaje hasta el Parque de las Aves.</p>
+                            <p class="card__hastags" >
+                                <span>Locales</span>  
+                                <span>MasVisitados</span>  
+                                <span>Recomendados</span> 
+                            </p>
+                        </div>
+                        <div class="card__footer" >
+                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                            <p class="card__footer-stars" >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4" >
+                    <article class="card--custom" >
+                        <div class="card__header">
+                                <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaBrazil">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title" >Catamarán del Iguazú</h3>
+                            <p class="card__text" >El Catamarán Cruceros Iguazú es una experiencia unica que nosotros la hacemos posible. Reserva con Nosotros Traslados y Lugar</p>
+                            <p class="card__hastags" >
+                                <span>Locales</span>  
+                                <span>MasVisitados</span>  
+                                <span>Recomendados</span> 
+                            </p>
+                        </div>
+                        <div class="card__footer" >
+                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                            <p class="card__footer-stars" >
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+
+        </section>
+        
+
+
+
+    </main>
+
+
+    <section class="row nosotros">
+        <h2 id="nosotros" class="title col-12">¿Quienes Somos?</h2>
+        <article class="col-lg-6 col-md-12">
+            <p class="main-text">HR Iguazu Traslados turismo es una empresa de <span class="bold">traslados vip
+                    situada en Puerto Iguazú</span>, nos especializamos en el servicio de traslados adaptándonos a
+                tu calendario y <span class="bold"> ofreciéndote los mejores destinos en la triple frontera</span>.
+                Llegamos a todos los puntos turísticos de la Triple frontera. En HR Iguazu Traslados entendemos que
+                la prioridad es el cliente por eso nos dedicamos profundamente a mejorar nuestros servicios de
+                atención otorgándote personal sumamente calificado
+                y los coches mas modernos del mercado.
+            </p>
+            <p class="main-text">
+                En HR Iguazu Turismo seguimos 3 valores claves: </p>
+            <ul class="lista-valores">
+                <li class="item-valores"><i class="fas fa-tasks fa-2x"></i>Responsabilidad</li>
+                <li class="item-valores"><i class="fa-solid fa-heart-circle-bolt fa-2x"></i>Empatía</li>
+                <li class="item-valores"><i class="fa-solid fa-shield-heart fa-2x "></i>Sinceridad</li>
+            </ul>
+            <p class="main-text">
+                Entendemos que los clientes son aquello que nos ayudan a crecer constantemente y <span
+                    class="bold">hacemos que tu viaje sea una experiencia única</span>.
+            </p>
+        </article>
+
+        <article class="col-lg-6 col-md-12 text-center">
+            <img src="img/info-01.jpg" alt="infohr-iguazutraslados">
+        </article>
+
+    </section>
+
+
+
+
+    <!-- testimonios -->
+    <section id="testimonios" class="container ">
+
+        <div class="row">
+
+            <h2 class="col-12 title text-dark">Testimonios</h2>
+
+            <div class="col-6 card-testimonios">
+                <div class="text-center text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+                <h3 class="text-center">Lisandra Lopez</h3>
+                <p>Gracias x la paciencia y el buen humor Huguito sos muy amable !!!</p>
+            </div>
+            <div class="col-6 card-testimonios">
+                <div class="text-center text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+                <h3 class="text-center">Aberturas Maoloni</h3>
+                <p>Buena persona y responsable en su trabajo.</p>
+            </div>
+
+            <div class="col-6 card-testimonios">
+                <div class="text-center text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+                <h3 class="text-center">Cecilia Perez Varela</h3>
+                <p>Gracias a ustedes por llevarnos a todos lados con tanta amabilidad y seguridad.</p>
+            </div>
+            <div class="col-6 card-testimonios">
+                <div class="text-center text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+                <h3 class="text-center">Mila Querales</h3>
+                <p> Muchas gracias por tu buen servicio Hugo, recomendado al 100% si vienen a Puerto Iguazú </p>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- contacto -->
+    <section id="contacto" class="fondo">
+        <div class="container">
+            <div class="row p-3">
+                <h2 class="col-12  title text-light">Contacto</h2>
+                <div class="col-12 text-center">
+                    <form class="w-100" action="https://formsubmit.co/contacto@hr-iguazutraslados.com" method="POST">
+                        <div class="">
+                            <input type="text" name="nombre" placeholder="Nombre y Apellido" class="formulario">
+                        </div>
+                        <div class="">
+                            <input type="hidden" name="_next" value="https://www.hr-iguazutraslados.com/thanksyou.html">
+                            <input type="hidden" name="_subject" value="Nueva Consulta">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="email" name="email" placeholder="E-Mail" class="formulario">
+                            <input type="hidden" name="_captcha" value="true">
+                            <input type="hidden" name="_template" value="table">
+                        </div>
+                        <div class="">
+                            <textarea name="consulta" placeholder="Tu Mensaje..." class="formulario"
+                                rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-formulario">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="position-sticky">
+        <div class="row">
+            <div class="col-12">
+                <div class="container text-center">
+                    <div class="social-icons">
+                        <a href="https://api.whatsapp.com/send?phone=5493757336758"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/Informatica-G6-100263182650988"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/g6.informatica/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <hr>
+                    <p> &#169 HR Iguazu Traslados. Todos los derechos reservados</p>
+                    <p>Desarrollado por Informatica G6</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- bootstrap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+        <!-- scroll js -->
+    <script>
+        setInterval(() => {
+            document.getElementById("next-btn").click();
+        }, 3000);
+    </script>
+</body>
+
+</html>

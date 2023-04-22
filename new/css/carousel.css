@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item-01{
+    height: 80vh;
+    background-image: url("../img/img-01.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.carousel-item-02{
+    height: 80vh;
+    background-image: url("../img/img-02.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;   
+}
+.carousel-item-03{
+    height: 80vh;
+    background-image: url("../img/img03.jpg");
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+.carousel-item-04{
+    height: 80vh;
+    background-image: url("../img/img-04.jpg");
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+.carousel-item-05{
+    height: 80vh;
+    background-image: url("../img/img-05.jpg");
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+}
+.carousel-item-06{
+    height: 80vh;
+    background-image: url("../img/img-06.jpg");
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;
+}

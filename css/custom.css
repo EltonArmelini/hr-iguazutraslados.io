@@ -1,0 +1,130 @@
+
+.main__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em;
+    gap: 1em;
+}
+.main__logo{ 
+    width: 15.3em;
+    height: 15.3em;
+    background-color: #283543;
+    border: 1px solid #283543;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__title{
+    text-align: center;
+}
+.main__text{
+    text-align: center;
+    padding: 0.3em;
+    font-size: 1.2rem;
+}
+
+.bg-color{
+    background-color: #128C7E;
+    padding: 2em 3em;
+}
+
+.card--custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 3%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #fff;
+    margin-bottom: 1.5em;
+
+    height: 110vh;
+    width: 100%;
+
+}
+.card--custom .card__header{
+    height: 40%;
+    width: 100%;
+    border-radius: 3% 3% 0 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.card--custom .card__header .card__header-flag{
+    height: 20%;
+    padding: .6em;
+}
+
+.card--custom .card__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 80%;
+}
+
+.card--custom .card__body > *{
+    text-align: center;
+    padding: 0.5em;
+}
+.card--custom .card__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 30%;
+}
+.card--custom .card__text{
+    height: 40%;
+}
+.card--custom .card__hastags{
+    
+    color: #128C7E;
+    font-weight: bold;
+    text-align: center;
+}
+.card--custom .card__hastags span{
+    margin-right:0.5em;
+}
+.card--custom .card__hastags span::before{
+    content: "#";
+}
+
+.card--custom .card__footer{
+    margin: .5em 0;
+    padding: 1em;
+    text-align: center;
+}
+.card__footer-stars{
+    color: #FFD700;
+}
+
+/* PSEUDO CLASES */
+
+.bg-color .col-4:nth-child(2) .card--custom .card__header{
+    background-image: url("../img/CataratasdelIguazu.jpg");
+}
+.bg-color .col-4:nth-child(3) .card--custom .card__header{
+    background-image: url("../img/AeropuertoIGR.jpg");
+}
+.bg-color .col-4:nth-child(4) .card--custom .card__header{
+    background-image: url("../img/RuinadeSanIgnacio.jpg");
+}
+.bg-color .col-4:nth-child(5) .card--custom .card__header{
+    background-image: url("../img/ComprasCdE.jpg");
+}
+.bg-color .col-4:nth-child(6) .card--custom .card__header{
+    background-image: url("../img/CataratasBrasileras.jpg");
+}
+.bg-color .col-4:nth-child(7) .card--custom .card__header{
+    background-image: url("../img/CatamaranIguazu.jpg");
+}
+.card__footer::before{
+    display: inline-block;
+    content: " ";
+    background-color: #FFD700;
+    width: 75%;
+    height: 0.2em;
+    margin: 1em;
+}
