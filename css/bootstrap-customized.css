@@ -1,0 +1,12 @@
+.offcanvas-body {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.offcanvas img{
+    padding: 6rem;
+    height: auto;
+    margin: 0;
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-customized.css">
         <!-- style custom-->
         <link rel="stylesheet" href="css/custom.css">
     <!-- fontawasome -->
@@ -104,65 +105,55 @@
     </nav>
 
     <!-- slider -->
-    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <article class="carousel-indicators ">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
+    <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          
+        </div>
+        <article class="carousel-inner">
+          <section class="carousel-item active carousel-item-01">
+            <div class="carousel-caption d-none d-md-block" data-bs-interval="10000">
+              <h5>Cataratas del Iguazú</h5>
+            </div>
+          </section>
+          <section class="carousel-item carousel-item-02" data-bs-interval="10000">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Cataratas Brasileras</h5>
+            </div>
+          </section>
+          <section class="carousel-item carousel-item-03" data-bs-interval="10000">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ruinas San Ignacio</h5>
+            </div>
+          </section>
+          <section class="carousel-item carousel-item-04" data-bs-interval="10000">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tucan - Animales Unicos</h5>
+            </div>
+          </section>
+          <section class="carousel-item carousel-item-05" data-bs-interval="10000">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Posadas - Capital de Misiones</h5>
+            </div>
+          </section>
+          <section class="carousel-item carousel-item-06" data-bs-interval="10000">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Selva Misioneta</h5>
+            </div>
+          </section>
         </article>
-        <section class="carousel-inner">
-            <article class="carousel-item active">
-                <img src="img/slide-01.jpeg" class="d-block w-100" alt="imgslidercataratas">
-                <div class="carousel-caption">
-                    <h5 class="">Cataratas del Iguazu</h5>
-                </div>
-            </article>
-            <article class="carousel-item">
-                <img src="img/silde-02.jpg" class="d-block w-100" alt="imgslidercataratas">
-                <div class="carousel-caption">
-                    <h5 class="">Cataratas del Iguazu</h5>
-                </div>
-            </article>
-            <article class="carousel-item">
-                <img src="img/slide-03.jpg" class="d-block w-100" alt="imgslidercataratas">
-                <div class="carousel-caption">
-                    <h5>Cataratas del Iguazu</h5>
-                </div>
-            </article>
-            <article class="carousel-item">
-                <img src="img/slide-04.jpg" class="d-block w-100" alt="imgsliderparqueaves">
-                <div class="carousel-caption">
-                    <h5>Parque de las Aves</h5>
-                </div>
-            </article>
-            <article class="carousel-item">
-                <img src="img/slide-05.jpg" class="d-block w-100" alt="imgsliderparqueaves">
-                <div class="carousel-caption">
-                    <h5>Selva Misionera</h5>
-                </div>
-            </article>
-        </section>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button id="next-btn" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-    </section>
+      </div>
+    
     <!-- content -->
 
     <main>
         <!-- MAIN TITLE -->
-        <section class="row main__container">
+        <section class="row containerCustom container--main">
             <div class="main__logo" >
                 <img class="col-12" src="img/nav-brand.png" alt="LogoHrIguazuTraslados">
             </div>
@@ -173,156 +164,157 @@
         <!-- DESTINOS -->
         <section id="destinos" class="row bg-color">
                 <h2 class="title text-light" >Destinos mas visitados</h2>
-
-                <div class="col-4">
-                    <article class="card--custom" >
-                        <div class="card__header">
-                                <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaArgentina">
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title" >Cataratas del Iguazú</h3>
-                            <p class="card__text" >Traslado Ida y vuelta desde tu hotel hasta el parque nacional Iguazú.</p>
-                            <p class="card__hastags" >
-                                <span>Locales</span>  
-                                <span>MasVisitados</span>  
-                                <span>Recomendados</span> 
-                            </p>
-                        </div>
-                        <div class="card__footer" >
-                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
-                            <p class="card__footer-stars" >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-4" >
-                    <article class="card--custom" >
-                        <div class="card__header">
-                                <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaBrazil">
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title" >Aeropuerto Iguazú (IGR)</h3>
-                            <p class="card__text" >Traslados desde y hasta el aeropuerto de la ciudad de Puerto Iguazú.</p>
-                            <p class="card__hastags" >
-                                <span>Locales</span>  
-                                <span>MasVisitados</span>  
-                                <span>Recomendados</span> 
-                            </p>
-                        </div>
-                        <div class="card__footer" >
-                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
-                            <p class="card__footer-stars" >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-4" >
+                <div class="card-container" >
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <article class="card--custom" >
-                        <div class="card__header">
-                                <img  class="card__header-flag" src="img/brazil-flag.png" alt="BanderaBrazil">
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title" >Ruinas San Ignacio</h3>
-                            <p class="card__text" >Realizamos el Traslado completo(Ida y Vuelta) hasta Las Ruinas de San Ignacio es una de los patrimonios de la humanidad. </p>
-                            <p class="card__hastags" >
-                                <span>Provinciales</span>  
-                                <span>MasVisitados</span>  
-                                <span>Unico</span> 
-                            </p>
-                        </div>
-                        <div class="card__footer" >
-                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
-                            <p class="card__footer-stars" >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-4">
-                    <article class="card--custom" >
-                        <div class="card__header">
-                                <img  class="card__header-flag" src="img/paraguay-flag.png" alt="BanderaParaguay">
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title" >Tour de Compras en Paraguay</h3>
-                            <p class="card__text" >Te llevamos de compras por Shoppings en Ciudad de Este, Paraguay</p>
-                            <p class="card__hastags" >
-                                <span>Seguro</span>  
-                                <span>Internacion</span>  
-                                <span>Recomendados</span> 
-                            </p>
-                        </div>
-                        <div class="card__footer" >
-                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
-                            <p class="card__footer-stars" >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-4" >
+                            <div class="card__header">
+                                    <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaArgentina">
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title" >Cataratas del Iguazú</h3>
+                                <p class="card__text" >Traslado Ida y vuelta desde tu hotel hasta el parque nacional Iguazú.</p>
+                                <p class="card__hastags" >
+                                    <span>Locales</span>  
+                                    <span>MasVisitados</span>  
+                                    <span>Recomendados</span> 
+                                </p>
+                            </div>
+                            <div class="card__footer" >
+                                <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                                <p class="card__footer-stars" >
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
                         <article class="card--custom" >
-                        <div class="card__header">
-                                <img  class="card__header-flag" src="img/brazil-flag.png" alt="BanderaBrazil">
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title" >Cataratas Brasileñas</h3>
-                            <p class="card__text" >Te llevamos a las Cataratas del lado brasileño, te regalamos un viaje hasta el Parque de las Aves.</p>
-                            <p class="card__hastags" >
-                                <span>Locales</span>  
-                                <span>MasVisitados</span>  
-                                <span>Recomendados</span> 
-                            </p>
-                        </div>
-                        <div class="card__footer" >
-                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
-                            <p class="card__footer-stars" >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-4" >
-                    <article class="card--custom" >
-                        <div class="card__header">
-                                <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaBrazil">
-                        </div>
-                        <div class="card__body">
-                            <h3 class="card__title" >Catamarán del Iguazú</h3>
-                            <p class="card__text" >El Catamarán Cruceros Iguazú es una experiencia unica que nosotros la hacemos posible. Reserva con Nosotros Traslados y Lugar</p>
-                            <p class="card__hastags" >
-                                <span>Locales</span>  
-                                <span>MasVisitados</span>  
-                                <span>Recomendados</span> 
-                            </p>
-                        </div>
-                        <div class="card__footer" >
-                            <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
-                            <p class="card__footer-stars" >
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </p>
-                        </div>
-                    </article>
+                            <div class="card__header">
+                                    <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaBrazil">
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title" >Aeropuerto Iguazú (IGR)</h3>
+                                <p class="card__text" >Traslados desde y hasta el aeropuerto de la ciudad de Puerto Iguazú.</p>
+                                <p class="card__hastags" >
+                                    <span>Locales</span>  
+                                    <span>MasVisitados</span>  
+                                    <span>Recomendados</span> 
+                                </p>
+                            </div>
+                            <div class="card__footer" >
+                                <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                                <p class="card__footer-stars" >
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <article class="card--custom" >
+                            <div class="card__header">
+                                    <img  class="card__header-flag" src="img/brazil-flag.png" alt="BanderaBrazil">
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title" >Ruinas San Ignacio</h3>
+                                <p class="card__text" >Realizamos el Traslado completo(Ida y Vuelta) hasta Las Ruinas de San Ignacio es una de los patrimonios de la humanidad. </p>
+                                <p class="card__hastags" >
+                                    <span>Provinciales</span>  
+                                    <span>MasVisitados</span>  
+                                    <span>Unico</span> 
+                                </p>
+                            </div>
+                            <div class="card__footer" >
+                                <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                                <p class="card__footer-stars" >
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card--custom" >
+                            <div class="card__header">
+                                    <img  class="card__header-flag" src="img/paraguay-flag.png" alt="BanderaParaguay">
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title" >Tour de Compras en Paraguay</h3>
+                                <p class="card__text" >Te llevamos de compras por Shoppings en Ciudad de Este, Paraguay</p>
+                                <p class="card__hastags" >
+                                    <span>Seguro</span>  
+                                    <span>Internacion</span>  
+                                    <span>Recomendados</span> 
+                                </p>
+                            </div>
+                            <div class="card__footer" >
+                                <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                                <p class="card__footer-stars" >
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
+                            <article class="card--custom" >
+                            <div class="card__header">
+                                    <img  class="card__header-flag" src="img/brazil-flag.png" alt="BanderaBrazil">
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title" >Cataratas Brasileñas</h3>
+                                <p class="card__text" >Te llevamos a las Cataratas del lado brasileño, te regalamos un viaje hasta el Parque de las Aves.</p>
+                                <p class="card__hastags" >
+                                    <span>Locales</span>  
+                                    <span>MasVisitados</span>  
+                                    <span>Recomendados</span> 
+                                </p>
+                            </div>
+                            <div class="card__footer" >
+                                <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                                <p class="card__footer-stars" >
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" >
+                        <article class="card--custom" >
+                            <div class="card__header">
+                                    <img  class="card__header-flag" src="img/argentina-flag.png" alt="BanderaBrazil">
+                            </div>
+                            <div class="card__body">
+                                <h3 class="card__title" >Catamarán del Iguazú</h3>
+                                <p class="card__text" >El Catamarán Cruceros Iguazú es una experiencia unica que nosotros la hacemos posible. Reserva con Nosotros Traslados y Lugar</p>
+                                <p class="card__hastags" >
+                                    <span>Locales</span>  
+                                    <span>MasVisitados</span>  
+                                    <span>Recomendados</span> 
+                                </p>
+                            </div>
+                            <div class="card__footer" >
+                                <h4 class="card__footer-title" >Puntuacion: 4(cuatro)</h4>
+                                <p class="card__footer-stars" >
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
 
 
@@ -334,7 +326,7 @@
     </main>
 
 
-    <section class="row nosotros">
+    <section class="row containerCustom nosotros">
         <h2 id="nosotros" class="title col-12">¿Quienes Somos?</h2>
         <article class="col-lg-6 col-md-12">
             <p class="main-text">HR Iguazu Traslados turismo es una empresa de <span class="bold">traslados vip
@@ -490,12 +482,6 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script.js"></script>
-        <!-- scroll js -->
-    <script>
-        setInterval(() => {
-            document.getElementById("next-btn").click();
-        }, 3000);
-    </script>
 </body>
 
 </html>
