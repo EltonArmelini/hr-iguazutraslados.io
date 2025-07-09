@@ -1,78 +1,86 @@
 /* SLIDER  */
-.carousel-item{
+.carousel-item {
     height: 80vh;
     background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.carousel-item:nth-child(1){
+.carousel-item:nth-child(1) {
     background-image: url("../img/CataratasdelIguazu.jpg");
 }
-.carousel-item:nth-child(2){
+
+.carousel-item:nth-child(2) {
     background-image: url("../img/CataratasBrasileras.webp");
 }
-.carousel-item:nth-child(3){
+
+.carousel-item:nth-child(3) {
     background-image: url("../img/RuinadeSanIgnacio.jpg");
 }
-.carousel-item:nth-child(4){
+
+.carousel-item:nth-child(4) {
     background-image: url("../img/Tucan.jpg");
 }
-.carousel-item:nth-child(5){
+
+.carousel-item:nth-child(5) {
     background-image: url("../img/PosadasMisiones.jpg");
 }
-.carousel-item:nth-child(6){
+
+.carousel-item:nth-child(6) {
     background-image: url("../img/SelvaMisionera.jpg");
 }
 
 
 /* MAIN SECTION */
-.containerCustom{
+.containerCustom {
     padding: 2.5em;
 }
 
-.container--main{
+.container--main {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
 }
-.container--main .main__logo{ 
+
+.container--main .main__logo {
     width: 15.3em;
     height: 15.3em;
     background-color: #283543;
     border: 1px solid #283543;
     border-radius: 50%;
     padding: 3em;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container--main .main__title{
+
+.container--main .main__title {
     text-align: center;
 }
-.container--main .main__text{
+
+.container--main .main__text {
     text-align: center;
     padding: 0.3em;
     font-size: 1.2rem;
 }
 
-.bg-color{
+.bg-color {
     background-color: #128C7E;
     padding: 2em 3em;
 }
 
 /* DESTINATION SECTION */
 
-.card--custom{
+.card--custom {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
     border-radius: 3%;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     background-color: #fff;
     margin-bottom: 1.5em;
 
@@ -80,7 +88,8 @@
     width: 100%;
 
 }
-.card--custom .card__header{
+
+.card--custom .card__header {
     height: 40%;
     width: 100%;
     border-radius: 3% 3% 0 0;
@@ -88,12 +97,12 @@
     background-size: cover;
 }
 
-.card--custom .card__header .card__header-flag{
+.card--custom .card__header .card__header-flag {
     height: 20%;
     padding: .6em;
 }
 
-.card--custom .card__body{
+.card--custom .card__body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -101,61 +110,72 @@
     height: 80%;
 }
 
-.card--custom .card__body > *{
+.card--custom .card__body>* {
     text-align: center;
     padding: 0.5em;
 }
-.card--custom .card__title{
+
+.card--custom .card__title {
     font-size: 1.5rem;
     font-weight: bold;
     height: 30%;
 }
-.card--custom .card__text{
+
+.card--custom .card__text {
     height: 40%;
 }
-.card--custom .card__hastags{
-    
+
+.card--custom .card__hastags {
+
     color: #128C7E;
     font-weight: bold;
     text-align: center;
 }
-.card--custom .card__hastags span{
-    margin-right:0.5em;
+
+.card--custom .card__hastags span {
+    margin-right: 0.5em;
 }
-.card--custom .card__hastags span::before{
+
+.card--custom .card__hastags span::before {
     content: "#";
 }
 
-.card--custom .card__footer{
+.card--custom .card__footer {
     margin: .5em 0;
     padding: 1em;
     text-align: center;
 }
-.card__footer-stars{
+
+.card__footer-stars {
     color: #FFD700;
 }
 
 /* PSEUDO CLASES */
 
-.card-container:nth-child(2) .card--custom .card__header{
-    background-image: url("../img/CataratasdelIguazu.jpg");
+.card-container > div:nth-child(1) .card__header {
+  background-image: url("../img/CataratasdelIguazu.jpg");
 }
-.card-container:nth-child(3) .card--custom .card__headerr{
-    background-image: url("../img/AeropuertoIGR.jpg");
+
+.card-container > div:nth-child(2) .card__header {
+  background-image: url("../img/AeropuertoIGR.jpg");
 }
-.bg-color .col-4:nth-child(4) .card--custom .card__header{
-    background-image: url("../img/RuinadeSanIgnacio.jpg");
+
+.card-container > div:nth-child(3) .card__header {
+  background-image: url("../img/RuinadeSanIgnacio.jpg");
 }
-.bg-color .col-4:nth-child(5) .card--custom .card__header{
-    background-image: url("../img/ComprasCdE.jpg");
+
+.card-container > div:nth-child(4) .card__header {
+  background-image: url("../img/ComprasCdE.jpg");
 }
-.bg-color .col-4:nth-child(6) .card--custom .card__header{
-    background-image: url("../img/CataratasBrasileras.jpg");
+
+.card-container > div:nth-child(5) .card__header {
+  background-image: url("../img/CataratasBrasileras.jpg");
 }
-.bg-color .col-4:nth-child(7) .card--custom .card__header{
-    background-image: url("../img/CatamaranIguazu.jpg");
+
+.card-container > div:nth-child(6) .card__header {
+  background-image: url("../img/CatamaranIguazu.jpg");
 }
-.card__footer::before{
+.card__footer::before {
     display: inline-block;
     content: " ";
     background-color: #FFD700;
